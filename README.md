@@ -13,6 +13,9 @@
     <a href="https://github.com/Lorenalgm/codar">Desafio</a>
     ·
     <a href="https://www.linkedin.com/in/lorenagmontes/">Contato</a>
+    ·
+    <a href="https://codar-dev-challenge-55ewu2jsr-thalesms2.vercel.app/">Demo</a>
+    
   </p>
 </p>
 
