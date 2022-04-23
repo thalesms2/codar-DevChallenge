@@ -90,17 +90,87 @@ export const Contact = styled.section`
         padding: .5em 0;
     }
     input {
-        background-color: #cfcfcf;
+        background-color: #BABABA;
         padding: 1em;
         border-radius: .5em;
         margin-right: .5em;
+        min-width: 250px;
     }
 `
 
 export const Comments = styled.section`
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5em;
+`
 
+export const Card = styled.div`
+    display: flex;
+
+    background-color: #BABABA;
+    padding: 1em;
+    width: 600px;
+    div:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        background-color: ${mainColor};
+        border-radius: 25em;
+    }
+    div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1em;
+    }
+    span:nth-child(1) {
+        max-width: 400px;
+        font-size: 1.2em;
+        margin-top: .2em;
+    }
+    span:nth-child(2) {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-top: .3em;
+    }
+    span:nth-child(3) {
+        font-weight: bold;
+    }
 `
 
 export const Footer = styled.section`
+    min-height: 300px;
+    background-color: black;
+    margin-top: 5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+    justify-content: space-around;
+    div {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        h2 {
+            font-size: 3em;
+            font-style: italic;
+            margin-bottom: .5em;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: .5em;
+            margin-top: .9em;
+        }
+        span {
+            margin-bottom: 1em;
+        }
+        svg {
+            fill: ${mainColor};
+        }
+    }
+`
 
+export const IconsDiv = styled.div`
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
 `
