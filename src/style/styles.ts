@@ -37,7 +37,7 @@ export const Services = styled.section`
         max-width: 500px;
         max-height: 400px;
     }
-    margin-bottom: 10em;
+    margin: 10em 0;
     padding: 0 20vw;
 `
 

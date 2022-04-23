@@ -42,7 +42,7 @@ function App() {
             <li>Chat online</li>
             <li>Blog integrado</li>
           </List>
-          <Contact>
+          <Contact id="contact">
             <h2>Nossa equipe está à disposição!</h2>
             <form>
               <input type="text" placeholder='Celular'/>
