@@ -1,5 +1,5 @@
 import { GlobalStyles } from './style/globalstyles'
-import { Header, Services, List, Contact, Comments, Footer } from './style/styles'
+import { Header, Services, List, Contact, Comments, Footer, TextDiv, ListDiv } from './style/styles'
 import Button from './components/Button/index'
 
 import coding from './assets/coding_.png'
@@ -21,17 +21,19 @@ function App() {
 
       <Services id="services">
         <img src={videoCall} alt="video call" />
-        <div>
-          <p>
+        <TextDiv>
+          <span>
             Alavanque seu negócio com um
+          </span>
+          <span>
             Website incrível
-          </p>
+          </span>
           <Button text="Solicitar orçamento"/>
-        </div>
+        </TextDiv>
       </Services>
 
       <Services id="services">
-        <div>
+        <ListDiv>
           <List>
             <li>Domínio personalizado</li>
             <li>Hospedagem</li>
@@ -40,17 +42,17 @@ function App() {
             <li>Chat online</li>
             <li>Blog integrado</li>
           </List>
-        </div>
+          <Contact>
+            <h2>Nossa equipe está à disposição!</h2>
+            <form>
+              <input type="text" placeholder='Celular'/>
+              <Button text="Ligamos para você"/>
+            </form>
+          </Contact>
+        </ListDiv>
         <img src={coding} alt="coding" />
       </Services>
 
-      <Contact>
-        <h2>Nossa equipe está à disposição!</h2>
-        <form>
-          <input type="text" />
-          <Button text="Ligamos para você"/>
-        </form>
-      </Contact>
 
       <Comments>
         <div>

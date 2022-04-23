@@ -32,16 +32,40 @@ export const Header = styled.section`
 
 export const Services = styled.section`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     img {
         max-width: 500px;
+        max-height: 400px;
     }
     margin-bottom: 10em;
+    padding: 0 20vw;
+`
+
+export const TextDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span:nth-child(1) {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    span:nth-child(2) {
+        color: ${mainColor};
+        font-size: 3em;
+        font-weight: 900;
+        margin-bottom: .8em;
+    }
+    Button {
+        max-width: 250px;
+    }
+`
+
+export const ListDiv = styled.div`
+    padding-top: 110px;
 `
 
 export const List = styled.ul`
     list-style: none;
-    padding: 0;
     li {
         line-height: 2.4em;
     }
@@ -59,7 +83,18 @@ export const List = styled.ul`
 `
 
 export const Contact = styled.section`
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    form {
+        padding: .5em 0;
+    }
+    input {
+        background-color: #cfcfcf;
+        padding: 1em;
+        border-radius: .5em;
+        margin-right: .5em;
+    }
 `
 
 export const Comments = styled.section`
