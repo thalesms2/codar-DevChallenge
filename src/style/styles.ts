@@ -39,6 +39,9 @@ export const Services = styled.section`
     }
     margin: 10em 0;
     padding: 0 20vw;
+    @media(max-width: 800px) {
+        flex-direction: row;
+    }
 `
 
 export const TextDiv = styled.div`
